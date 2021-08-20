@@ -14,6 +14,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         mix += str(letters.text[i])
 
     return func.HttpResponse(
-            mix,
+            str(mix),
             status_code=200
     )
