@@ -5,8 +5,8 @@ import azure.functions as func
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
-    nums = requests.get('http://localhost:7071/api/Service-2')
-    letters= requests.get('http://localhost:7071/api/Service-3')
+    nums = requests.get('http://gregs-milestone-project/api/Service-2')
+    letters= requests.get('http://gregs-milestone-project/api/Service-3')
     
     mix = ''
     for i in range(0, 5):
